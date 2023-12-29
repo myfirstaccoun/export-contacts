@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصدير جهات الإتصال</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div id="editor" dir="rtl">
+        <label for="contacts">أضف الأرقام التي تريد تصديرها - ضع كل رقم في سطر</label>
+        <textarea dir="ltr" id="contacts"></textarea>
+        
+        <div id="contact-name-input" class="input">
+            <label>الإسم الذي تريده لكل جهة</label>
+            <input type="text" id="contact-name" value="جهة">
+        </div>
+        
+        <div id="file-name-input" class="input">
+            <label>اسم الملف</label>
+            <input type="text" id="file-name" value="جهات الإتصال">
+        </div>
+
+        <a id="submit" onclick="downloadContacts()">تصدير الجهات</a>
+    </div>
+</body>
+</html>
